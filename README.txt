@@ -25,8 +25,8 @@ We demonstrate the directory tree of our code, including the names of some main 
      |              |-------- SpaseRecovery_QTA.m           : The objective function used in the L1 Norm Generalized Eigenvalue Problem
      |              |
      |              |
-     |              |-------- AccerlatedProximalGradient.m  : Implementation of Multi-Stage Convex Relaxation for the L1 Norm Generalized Eigenvalue Problem
-     |              |-------- ProximalGradient.m            : Implementation of CD-SNCA for the L1 Norm Generalized Eigenvalue Problem
+     |              |-------- AccerlatedProximalGradient.m  : Implementation of APG Method for Solving Composite Optimization Problem
+     |              |-------- ProximalGradient.m            : Implementation of PG Method for Solving Composite Optimization Problem
      |
      |
      |
