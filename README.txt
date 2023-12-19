@@ -32,33 +32,33 @@ We demonstrate the directory tree of our code, including the names of some main 
      |
 ------------------- util
      |              |
-     |              |-------- ComputeCofPoly4.m                          : Accelerated Proximal Gradient Method for solving convex composite optimization problems
-     |              |-------- ComputeObjGradNorm4.m        : Compute the auxiliary matrix for the Phase Retrieval Problem
-     |              |-------- ComputeObjGradNorm4_sqrt.m                   : Euclidean projection for the binary constraints: min_v ||v - a||_2^2, s.t. v \in {-1,+1}^n
-     |              |-------- ComputeObjNorm1.m                      : Proximal operator for the L1 norm: min_{x} 0.5||x-a||^2 + lambda*||x||_1
+     |              |-------- ComputeCofPoly4.m              : Compute the coefficient for the 4-order polynomial function
+     |              |-------- ComputeObjGradNorm4.m          : Compute the objective value for some function
+     |              |-------- ComputeObjGradNorm4_sqrt.m     : Compute the objective value for some function
+     |              |-------- ComputeObjNorm1.m              : Compute the objective value for some function
      |              |-------- SpectralNorm.m                 : Estimating the spectral norm of the matrix G'G using the Lanczos algorithm
-     |              |-------- ComputeObjNorm4.m                : Compute the subgradient of the top k norm function (in absolute value)
-     |              |-------- GetDataStr.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- GetDataStr2.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- generate_y_DCSparseOpt.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- getdata_ica.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- prox_l1.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- prox_l2.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- quadfrac2.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- solve_4order.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- topksum.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
+     |              |-------- ComputeObjNorm4.m              : Compute the objective value for some function
+     |              |-------- GetDataStr.m                   : Get the data strings
+     |              |-------- GetDataStr2.m                  : Get the data strings
+     |              |-------- generate_y_DCSparseOpt.m       : Generate the measurement vector for the sparse optimization problem
+     |              |-------- getdata_ica.m                  : Get the data for the ICA problem
+     |              |-------- quadfrac2.m                    : solve the quadratic fractional problem
+     |              |-------- solve_4order.m                 : Solve the 4-order polynomial one-dimensional subproblem
+     |              |-------- topksum.m                      : Compute the sum of top-k value for a vector
+     |
      |
 ------------------- proximal
      |              |
-     |              |-------- nonconvex_prox_diff_l1topk.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_diff_l2l4.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_frac_l1.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_frac_l1topk.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_frac_l2.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_frac_l2.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_l1topk2.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_frac_topk.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
-     |              |-------- nonconvex_prox_frac_linf.m                   : Compute the average vector for multiple variable-length vectors. Note: we truncate the vectors to make them the same length.
+     |              |-------- nonconvex_prox_diff_l1topk.m   : Compute the proximal operator for l1 and top-k norm function
+     |              |-------- nonconvex_prox_diff_l2l4.m     : Compute the proximal operator for l2 and l4 norm norm function
+     |              |-------- nonconvex_prox_frac_l1.m       : Compute the proximal operator for l1 norm function
+     |              |-------- nonconvex_prox_frac_l1topk.m   : Compute the proximal operator for l1 and top-k norm function
+     |              |-------- nonconvex_prox_frac_l2.m       : Compute the proximal operator for l2 norm function
+     |              |-------- nonconvex_prox_l1topk2.m       : Compute the proximal operator for l1 top-k norm function
+     |              |-------- nonconvex_prox_frac_topk.m     : Compute the proximal operator for top-k norm function
+     |              |-------- nonconvex_prox_frac_linf.m     : Compute the proximal operator for linf norm function
+     |              |-------- prox_l1.m                      : Compute the proximal operator for l1 norm function
+     |              |-------- prox_l2.m                      : Compute the proximal operator for l2 norm function
      |
      |
      |
